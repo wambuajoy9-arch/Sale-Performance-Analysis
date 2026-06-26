@@ -272,8 +272,9 @@ fig_satisfaction.update_traces(
 fig_satisfaction.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
     font=dict(family="Georgia"),
-    tittle=dict(
+    title=dict(    
         text="Customer Segmentation by Satisfaction",
+
         font=dict(size=22,color="#444444")
     )
                    
