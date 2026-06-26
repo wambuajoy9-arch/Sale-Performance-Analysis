@@ -57,7 +57,7 @@ st.markdown("""
         border-radius: 4px !important;
     }
     </style>
-""", unsafe_allow_code_html=True)
+""", unsafe_allow_html=True)
 
 # Generate unique dropdown lists from your live data (or fallback defaults)
 if df_live is not None:
