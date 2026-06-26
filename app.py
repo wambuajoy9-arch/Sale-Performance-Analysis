@@ -155,7 +155,7 @@ st.markdown("""
         font-family: 'Georgia', serif !important; 
     }
     </style>
-""", unsafe_allow_code_html=True) 
+""", unsafe_allow_html=True) 
 
 
 kpi_col1, kpi_col2, kpi_col3, kpi_col4 = st.columns(4)
