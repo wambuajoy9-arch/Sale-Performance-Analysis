@@ -268,6 +268,7 @@ fig_satisfaction.update_traces(
     insidetextfont=dict(family="Georgia", size=14, color="#333333")
 )
 
+
 fig_satisfaction.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
     font_family="Georgia",
@@ -279,9 +280,11 @@ fig_satisfaction.update_layout(
         yanchor="center",
         y=0.5,
         xanchor="left",
-        x=1.05                
-    )
+        x=1.05
+    ) 
 )
+
+
 
 
 st.plotly_chart(fig_satisfaction, use_container_width=True)
