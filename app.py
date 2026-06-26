@@ -324,7 +324,7 @@ st.markdown("""
         padding: 5px !important;
     }
     </style>
-""", unsafe_allow_code_html=True)
+""", unsafe_allow_html=True)
 
 
 st.dataframe(
