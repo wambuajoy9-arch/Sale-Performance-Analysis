@@ -265,7 +265,7 @@ fig_satisfaction = px.pie(
 fig_satisfaction.update_traces(
     textposition="inside",
     textinfo="percent", 
-    insidetextfont=dict(fontfamily="Georgia", size=14, color="#333333")
+    insidetextfont=dict(family="Georgia", size=14, color="#333333")
 )
 
 fig_satisfaction.update_layout(
