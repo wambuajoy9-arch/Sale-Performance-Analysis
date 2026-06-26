@@ -271,7 +271,7 @@ fig_satisfaction.update_traces(
 
 fig_satisfaction.update_layout(
     paper_bgcolor='rgba(0,0,0,0)',
-    font_family="Georgia",
+    font=dict(family="Georgia"),
     title_font_color="#444444", 
     title_font_size=22,
     title_x=0.22,               
