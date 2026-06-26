@@ -276,7 +276,7 @@ fig_satisfaction.update_layout(
         text="Customer Segmentation by Satisfaction",
 
         font=dict(size=22,color="#444444")
-    )
+    ),
                    
     legend=dict(
         font=dict(size=12),
