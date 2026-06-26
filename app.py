@@ -295,6 +295,17 @@ st.markdown("###  Customer Operational Matrix")
 if df_filtered is not None:
     try:
         summary_df = df_filtered.groupby('Satisfaction').mean()[['Discount', 'Delivery Days', 'Quantity']].reset_index()
+        summary_df.columns = ["Customer Segment", "Avg. Discount Given", "Avg. Shipping Speed (Days)", "Avg. Items per Order"]
+        
+        summary_df["Avg. Discount Given"] = summary_df["Avg. Discount Given"].apply(lambda x: f"{x*100:.0f}%" if x < 1 else f"{x:.0f}%")
+        summary_df["Avg. Shipping Speed (Days)"] = summary_df["Avg. Shipping Speed (Days)"].round(1).astype(str) + " Days"
+        summary_df["Avg. Items per Order"] = summary_df["Avg. Items per Order"].round(0).astype(int).astype(str) + " Units"
+        
+        st.dataframe(summary_df, use_container_width=True, hide_index=True)
+        
+    except Exception as e:
+
+        st.warning("Could not calculate dynamic matrix averages. Showing backup data.")
 
 
 
