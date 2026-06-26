@@ -311,7 +311,7 @@ if df_filtered is not None:
 
 matrix_data = pd.DataFrame({
     "Customer Segment": ["Dissatisfied (50%)", "Satisfied but Neutral (25%)", "Highly Satisfied (25%)"],
-    "Number of Customers":[2477,1254,1269]
+    "Number of Customers":[2477,1254,1269],
     "Average Discount": ["0.18", "0.18", "0.18"],
     "Average Delivery Days": [6.2, 6.1, 6.0],
     "Average Quantity": [4, 4, 4]
