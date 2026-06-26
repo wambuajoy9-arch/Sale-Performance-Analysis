@@ -245,7 +245,7 @@ st.plotly_chart(fig_regional, use_container_width=True)
 st.markdown("---")
 
 
-st.markdown("### 👥 Customer Satisfaction Breakdown")
+st.markdown("###  Customer Satisfaction Breakdown")
 
 satisfaction_data = pd.DataFrame({
     "Segment": ["Dissatisfied", "Highly Satisfied", "Satisfied but Neutral"],
