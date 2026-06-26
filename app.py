@@ -269,23 +269,13 @@ fig_satisfaction.update_traces(
 )
 
 
-fig_satisfaction.update_layout(
+fig_satisfaction.layout.update(
     paper_bgcolor='rgba(0,0,0,0)',
-    font=dict(family="Georgia"),
-    title=dict(    
-        text="Customer Segmentation by Satisfaction",
-
-        font=dict(size=22,color="#444444")
-    ),
-                   
-    legend=dict(
-        font=dict(size=12),
-        yanchor="center",
-        y=0.5,
-        xanchor="left",
-        x=1.05
-    ) 
+    showlegend=True
 )
+
+
+
 
 
 
